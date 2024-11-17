@@ -63,6 +63,10 @@ export const cssInternals = {
   attrTest: $newZigFunction("css_internals.zig", "attrTest", 3),
 };
 
+export const yarnLockParserInternals = {
+  parse: $newZigFunction("yarn.zig", "YarnLockParserTestingAPIs.parse", 3),
+};
+
 export const crash_handler = $zig("crash_handler.zig", "js_bindings.generate") as {
   getMachOImageZeroOffset: () => number;
   segfault: () => void;
